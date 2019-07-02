@@ -3,13 +3,13 @@ executors:
   unity:
     docker:
       # https://hub.docker.com/r/gableroux/unity3d/tags
-      - image: gableroux/unity3d:2018.2.21f1
+      - image: gableroux/unity3d:2018.2.21f1-windows
 jobs:
   build-test:
     executor: unity
     steps:
       - checkout
-      - run: /opt/Unity/Editor/Unity -quit -batchmode -nographics -silent-crashes -logFile .circleci/Unity_v2018.x.ulf || exit 0
+      - run: /opt/Unity/Editor/Unity -quit -batchmode -nographics -silent-crashes -logFile
 workflows:
   version: 2
   build:
