@@ -5,12 +5,14 @@ executors:
       - image: gableroux/unity3d:2018.2.21f1
 jobs:
   build_StandaloneLinux64:
-  steps:
-  - run:
-      environment:
-        BUILD_TARGET: StandaloneLinux64
-  - store_artifacts:
-      path: "./Builds/"
+    executor: unity
+    steps:
+    - checkout
+    - run:
+        environment:
+          BUILD_TARGET: StandaloneLinux64
+    - store_artifacts:
+        path: "./Builds/"
 workflows:
   version: 2
   build:
