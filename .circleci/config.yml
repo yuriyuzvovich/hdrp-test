@@ -4,17 +4,15 @@ executors:
     docker:
       - image: gableroux/unity3d:2018.2.21f1
 jobs:
-  build_StandaloneLinux64:
+  build_test:
     executor: unity
     steps:
     - checkout
-    - run:
-        environment:
-          BUILD_TARGET: StandaloneLinux64
+    - run: /opt/Unity/Editor/Unity -quit -batchmode -nographics -silent-crashes -logFile -customBuildTarget 'StandaloneLinux64'
     - store_artifacts:
         path: "./Builds/"
 workflows:
   version: 2
   build:
     jobs:
-      - build_StandaloneLinux64
+      - build_test
