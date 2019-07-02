@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\wurich\.Rider2019.1\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\wurich\.Rider2019.1\system\resharper-host\Local\Transient\ReSharperHost\v191\SolutionCaches\_hdrp-test.-1419961933.00" t="ExcludeRecursive" />
+    <e p="E:\projects\rnd\hdrp-test" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Editor" t="Include">
+          <e p="BuildScript.cs" t="Include" />
+          <e p="StartSceneInPlayMode.cs" t="Include" />
+        </e>
+      </e>
+      <e p="hdrp-test.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
